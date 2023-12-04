@@ -10,7 +10,6 @@ import {
 import React from "react";
 import { FontAwesome, AntDesign, Feather } from "@expo/vector-icons";
 import { bgHeader } from "../assets/img";
-import Hotels from "../components/Hotels";
 import data from "../assets/data/data";
 import { useNavigation } from "@react-navigation/native";
 

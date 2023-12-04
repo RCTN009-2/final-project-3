@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import React from "react";
-import Hotels from "../components/Hotels";
-import data from "../assets/data/data";
+import Hotels from "../../components/Hotels";
+import data from "../../assets/data/data";
 
 export default function SearchResultScreen(props) {
   return (
