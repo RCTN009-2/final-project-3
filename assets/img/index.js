@@ -1,3 +1,3 @@
-import bgHeader from "./bg-photo.jpg";
+import bgHeader from "./bgHome.jpg";
 
 export { bgHeader };
