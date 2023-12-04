@@ -13,6 +13,8 @@ import WishlistScreen from "./screens/WishlistScreen";
 import HistoryScreen from "./screens/HistoryScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import { NavigationContainer } from "@react-navigation/native";
+import DestinationSearchScreen from "./screens/DestinationSearchScreen";
+import GuestScreen from "./screens/GuestScreen";
 
 export default function StackNavigator() {
   const Tab = createBottomTabNavigator();
@@ -87,6 +89,16 @@ export default function StackNavigator() {
           name="main"
           component={BottomTabs}
           options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Destination Search"
+          component={DestinationSearchScreen}
+          options={{ title: "Search your destination" }}
+        />
+        <Stack.Screen
+          name="Guest"
+          component={GuestScreen}
+          options={{ title: "How many people?" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
