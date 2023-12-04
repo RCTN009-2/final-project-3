@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
-import data from "../assets/data/data";
+import data from "../../assets/data/data";
 
 export default function Hotels(props) {
   const data = props.hotels;

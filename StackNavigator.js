@@ -2,19 +2,19 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "./screens/HomeScreen";
+import HomeScreen from "./src/screens/HomeScreen";
 import {
   Ionicons,
   FontAwesome5,
   MaterialIcons,
   AntDesign,
 } from "@expo/vector-icons";
-import WishlistScreen from "./screens/WishlistScreen";
-import HistoryScreen from "./screens/HistoryScreen";
-import ProfileScreen from "./screens/ProfileScreen";
+import WishlistScreen from "./src/screens/WishlistScreen";
+import HistoryScreen from "./src/screens/HistoryScreen";
+import ProfileScreen from "./src/screens/ProfileScreen";
 import { NavigationContainer } from "@react-navigation/native";
-import DestinationSearchScreen from "./screens/DestinationSearchScreen";
-import GuestScreen from "./screens/GuestScreen";
+import DestinationSearchScreen from "./src/screens/DestinationSearchScreen";
+import GuestScreen from "./src/screens/GuestScreen";
 
 export default function StackNavigator() {
   const Tab = createBottomTabNavigator();
@@ -90,6 +90,7 @@ export default function StackNavigator() {
           component={BottomTabs}
           options={{ headerShown: false }}
         />
+
         <Stack.Screen
           name="Destination Search"
           component={DestinationSearchScreen}
