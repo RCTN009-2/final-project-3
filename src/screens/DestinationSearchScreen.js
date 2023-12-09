@@ -8,31 +8,41 @@ import { useNavigation } from "@react-navigation/native";
 export default function DestinationSearchScreen() {
   const navigation = useNavigation();
   const [inputText, setInputText] = useState();
+  const [filteredData, setFilteredData] = useState();
 
+  const handleSearch = (text) => {
+    setInputText(text);
+
+    // Filtering search results based on input text
+    const filtered = searchResult.filter((item) =>
+      item.description.toLowerCase().includes(text.toLowerCase())
+    );
+    setFilteredData(filtered);
+  };
+
+  const renderDestinationItem = ({ item }) => (
+    <Pressable style={styles.row} onPress={() => navigation.navigate("Guest")}>
+      <View style={styles.icon}>
+        <FontAwesome name="map-marker" size={22} color="black" />
+      </View>
+      <Text style={styles.location}>{item.description}</Text>
+    </Pressable>
+  );
   return (
     <View style={styles.container}>
       {/* input components */}
+
       <TextInput
         style={styles.textInput}
         placeholder="where you want to go?"
         value={inputText}
-        onChangeText={setInputText}
+        onChangeText={handleSearch}
       />
 
-      {/* List of destination */}
       <FlatList
-        data={searchResult}
-        renderItem={({ item }) => (
-          <Pressable
-            style={styles.row}
-            onPress={() => navigation.navigate("Guest")}
-          >
-            <View style={styles.icon}>
-              <FontAwesome name="map-marker" size={22} color="black" />
-            </View>
-            <Text style={styles.location}>{item.description}</Text>
-          </Pressable>
-        )}
+        data={filteredData}
+        renderItem={renderDestinationItem}
+        keyExtractor={(item) => item.id.toString()}
       />
     </View>
   );
@@ -40,11 +50,15 @@ export default function DestinationSearchScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 30,
+    margin: 20,
   },
   textInput: {
+    marginTop: 10,
     fontSize: 20,
     marginBottom: 20,
+    padding: 10,
+    borderRadius: 10,
+    backgroundColor: "white",
   },
   row: {
     flexDirection: "row",

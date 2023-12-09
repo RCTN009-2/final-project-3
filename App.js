@@ -1,8 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
-import StackNavigator from "./StackNavigator";
+
+import Router from "./Router";
 
 export default function App() {
-  return <StackNavigator />;
+  return <Router />;
 }
 
 const styles = StyleSheet.create({

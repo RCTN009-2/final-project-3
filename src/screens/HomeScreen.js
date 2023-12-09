@@ -32,7 +32,10 @@ export default function HomeScreen() {
           <Text style={styles.title}>Go Near</Text>
 
           {/* button */}
-          <Pressable style={styles.button} onPress={() => console.warn(data)}>
+          <Pressable
+            style={styles.button}
+            onPress={() => navigation.navigate("SearchResults")}
+          >
             <Text style={styles.buttonText}>Explore Nearby Stays</Text>
           </Pressable>
         </ImageBackground>
