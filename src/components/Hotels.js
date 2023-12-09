@@ -1,11 +1,20 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
-import data from "../../assets/data/data";
+
+import { Pressable } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import data from "../assets/data/data";
 
 export default function Hotels(props) {
   const data = props.hotels;
+
+  const navigation = useNavigation();
+  const goToDetailHotels = () => {
+    navigation.navigate("HotelsDetail", { hotelId: data.id });
+  };
+
   return (
-    <View style={styles.container}>
+    <Pressable onPress={goToDetailHotels} style={styles.container}>
       {/* image */}
       <Image
         style={styles.image}
@@ -20,21 +29,24 @@ export default function Hotels(props) {
 
       {/* Type & description */}
       <Text style={styles.description} numberOfLines={2}>
-        {data.type}. {data.title}
+        {data.title}
       </Text>
 
       {/* Price */}
-      <Text style={styles.price}>${data.newPrice}</Text>
+      <Text style={styles.price}>Rp {data.price}</Text>
 
       {/* Total Price */}
-      <Text style={styles.totalPrice}>${data.totalPrice} Total</Text>
-    </View>
+      <Text style={styles.type}>{data.type}</Text>
+    </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    margin: 30,
+    margin: 10,
+    padding: 30,
+    borderRadius: 15,
+    backgroundColor: "white",
   },
   image: {
     width: "100%",
@@ -55,7 +67,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginVertical: 10,
   },
-  totalPrice: {
+  type: {
     color: "grey",
     textDecorationLine: "underline",
   },

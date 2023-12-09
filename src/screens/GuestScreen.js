@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import React, { useState } from "react";
 import { Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import SearchResultScreen from "./SearchResultScreen";
 
 export default function GuestScreen() {
   const [adults, setAdults] = useState(0);
@@ -10,7 +11,7 @@ export default function GuestScreen() {
 
   const navigation = useNavigation();
   return (
-    <View style={{ justifyContent: "space-between", height: "100%" }}>
+    <View style={{ justifyContent: "space-between", height: "100%", flex: 1 }}>
       <View>
         <View style={styles.row}>
           <View>
@@ -62,7 +63,6 @@ export default function GuestScreen() {
             </Pressable>
           </View>
         </View>
-
         {/* Infants */}
         <View style={styles.row}>
           <View>
@@ -89,23 +89,29 @@ export default function GuestScreen() {
             </Pressable>
           </View>
         </View>
-        <View>
-          <Pressable
-            onPress={() => navigation.navigate()}
-            style={{
-              marginBottom: 20,
-              backgroundColor: "skyblue",
-              alignItems: "center",
-              justifyContent: "center",
-              height: 50,
-              marginHorizontal: 20,
-              borderRadius: 10,
-            }}
-          >
-            <Text>Search</Text>
-          </Pressable>
-        </View>
       </View>
+
+      <Pressable
+        onPress={() =>
+          navigation.navigate("Home", {
+            screen: "Explore",
+            params: { screen: "SearchResults" },
+          })
+        }
+        style={{
+          marginBottom: 20,
+          backgroundColor: "skyblue",
+          alignItems: "center",
+          justifyContent: "center",
+          height: 50,
+          marginHorizontal: 20,
+          borderRadius: 10,
+        }}
+      >
+        <Text style={{ fontSize: 18, color: "white", fontWeight: "bold" }}>
+          Search
+        </Text>
+      </Pressable>
     </View>
   );
 }

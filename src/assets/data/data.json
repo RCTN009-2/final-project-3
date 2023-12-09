@@ -1,0 +1,245 @@
+[
+  {
+    "id": 21,
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Hotel",
+    "title": "The Ritz-Carlton Jakarta Pacific Place    ",
+    "description":
+      "Hotel mewah yang dapat dicapai dengan 9 menit berjalan kaki dari halte bus ini berjarak 8 km dari Monumen Nasional Indonesia dan 10 km dari Masjid Istiqlal yang luas. Kamar-kamar elegan dilengkapi Wi-Fi gratis, TV layar datar, jendela setinggi langit-langit, kamar mandi marmer dengan TV, dan akses ke lounge eksekutif. Suite dilengkapi dengan ruang keluarga dan/atau makan terpisah. Room service tersedia. Sarapan prasmanan (berbayar) disajikan di restoran mewah. Ada juga bar lounge di ruang terbuka, kolam renang outdoor dan bak mandi air panas, gym, serta spa yang menawarkan pijat dan perawatan kecantikan. Aula serbaguna besar menampung hingga 7.000 tamu. Tersedia tempat parkir.",
+    "bed": 2,
+    "bedroom": 3,
+    "price": "2.350.000",
+   " city": "Jakarta"
+  },
+  {
+    "id": 1,
+    "image": "https://media.istockphoto.com/id/476217503/photo/house-with-swimming-pool-at-night.webp?s=170667a&w=0&k=20&c=s1odpejauy4MCKplU3hyV5QCTUqGaUZqzTsAJ8cNkGk=",
+    "type": "Hotel",
+    "title": "The Sanchaya Bintan Hotel",
+    "description":
+      "Resor megah bergaya Kolonial yang terletak di antara taman-taman tepi pantai ini berjarak 8 km dari Terminal Feri Bandar Bentan Telani serta 10 km dari lapangan golf 18 lubang Laguna Bintan Golf Club. Suite mewah dan vila terpisah menawarkan Wi-Fi gratis, iPad, TV Bang & Olufsen, serta linen berkualitas dan kulkas wine. Semua memiliki balkon atau teras, beberapa di antaranya dengan pemandangan laut; kamar di kelas yang lebih tinggi dilengkapi ruang keluarga dan/atau kamar tidur tambahan. Beberapa villa memiliki kolam renang pribadi.",
+    "bed": 3,
+    "bedroom": 2,
+    "price": "9.256.500",
+   " city": "Kepulauan Riau"
+  },
+  {
+    "id": 2,
+    "image": "https://plus.unsplash.com/premium_photo-1687862745559-d6019959d481?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Hotel",
+    "title": "Hotel Indonesia Kempinski Jakarta",
+    "description":
+      "Hotel mewah yang dapat dicapai dengan 9 menit berjalan kaki dari halte bus ini berjarak 8 km dari Monumen Nasional Indonesia dan 10 km dari Masjid Istiqlal yang luas. Kamar-kamar elegan dilengkapi Wi-Fi gratis, TV layar datar, jendela setinggi langit-langit, kamar mandi marmer dengan TV, dan akses ke lounge eksekutif. Suite dilengkapi dengan ruang keluarga dan/atau makan terpisah. Room service tersedia. Sarapan prasmanan (berbayar) disajikan di restoran mewah. Ada juga bar lounge di ruang terbuka, kolam renang outdoor dan bak mandi air panas, gym, serta spa yang menawarkan pijat dan perawatan kecantikan. Aula serbaguna besar menampung hingga 7.000 tamu. Tersedia tempat parkir.",
+    "bed": 2,
+    "bedroom": 1,
+    "price": "2.500.990",
+   " city": "Jakarta"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Resort",
+    "title": "Typical canarian house",
+    "description":
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem",
+    "bed": 4,
+    "bedroom": 3,
+    "oldPrice": 120,
+    "price":"2.100.000",
+    " city":"Bandung"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1613152184920-bc1c4ab7fd1d?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Apartment",
+    "title": "Cozy Room in Jakarta",
+    "description":
+      "Enjoy a comfortable stay in this cozy room located in the heart of Jakarta. Close to major attractions and amenities.",
+    "bed": 1,
+    "bedroom": 1,
+    "price": "2.200.500",
+   " city": "Jakarta"
+  },
+  {
+    "id": 5,
+    "image": "https://plus.unsplash.com/premium_photo-1661964225206-fd5d445a6edd?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Apartment",
+    "title": "Modern Apartment in Surabaya",
+    "description":
+      "Discover the modern charm of Surabaya in this spacious apartment. Perfect for solo travelers or couples.",
+    "bed": 2,
+    "bedroom": 1,
+    "price": "3.500.000", 
+   " city": "Surabaya"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Entire House",
+    "title": "Traditional House in Yogyakarta",
+    "description":
+      "Experience the rich cultural heritage of Yogyakarta by staying in this traditional house. Ideal for cultural enthusiasts.",
+    "bed": 3,
+    "bedroom": 2,
+    "price": "4.550.000", 
+   " city": "Yogyakarta"
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Private Villa",
+    "title": "Serenity Villa in Bandung",
+    "description":
+      "Escape to tranquility in this serene villa nestled amidst nature in Bandung. Relax and unwind in peaceful surroundings.",
+    "bed": 4,
+    "bedroom": 3,
+    "price": "3.700.00",
+   " city": "Bandung"
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Private Villa",
+    "title": "Amaris Hotel Teuku Umar Denpasar",
+    "description":
+      "Escape to tranquility in this serene villa nestled amidst nature in Bandung. Relax and unwind in peaceful surroundings.",
+    "bed": 4,
+    "bedroom": 3,
+    "price": "3.570.000",
+   " city": "Bali"
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Private Villa",
+    "title": "Serenity Villa in Bandung",
+    "description":
+      "Escape to tranquility in this serene villa nestled amidst nature in Bandung. Relax and unwind in peaceful surroundings.",
+    "bed": 4,
+    "bedroom": 3,
+    "price": "3.700.00",
+   " city": "Bandung"
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Private Villa",
+    "title": "Serenity Villa in Bandung",
+    "description":
+      "Escape to tranquility in this serene villa nestled amidst nature in Bandung. Relax and unwind in peaceful surroundings.",
+    "bed": 4,
+    "bedroom": 3,
+    "price": "2.350.000",
+   " city": "Bandung"
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Hotel",
+    "title": "Luxury Resort",
+    "description": "A luxurious resort with stunning views",
+    "bed": 1,
+    "bedroom": 1,
+    "price": "4.550.000",
+    "city": "Ubud, Bali"
+  },
+  {
+    "id": 12,
+    "image": "https://plus.unsplash.com/premium_photo-1663093806285-d905ca96c661?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Apartment",
+    "title": "Modern Downtown Loft",
+    "description": "A stylish loft in the heart of the city",
+    "bed": 2,
+    "bedroom": 1,
+    "price": "1.800.000",
+    "city": "Yogyakarta"
+  },
+  {
+    "id": 13,
+    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Resort",
+    "title": "Beachfront Paradise",
+    "description": "Escape to a tropical paradise by the sea",
+    "bed": 1,
+    "bedroom": 1,
+    "price": "3.790.990",
+    "city": "Surabaya"
+  },
+  {
+    "id": 14,
+    "image": "https://images.unsplash.com/photo-1582719388123-e03e25d06d51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Resort",
+    "title": "Historic Downtown Inn",
+    "description": "Experience the charm of a historic inn",
+    "bed": 1,
+    "bedroom": 1,
+    "price": "1.550.990",
+    "city": "Bandung"
+  },
+  {
+    "id": 15,
+    "image": "https://example.com/image5.jpg",
+    "type": "Apartment",
+    "title": "Cozy Urban Studio",
+    "description": "A cozy studio in a vibrant neighborhood",
+    "bed": 1,
+    "bedroom": 1,
+    "price": "2.100.000",
+    "city": "Bali"
+  },
+  {
+    "id": 16,
+    "image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Resort",
+    "title": "Mountain Retreat",
+    "description": "Retreat to a peaceful mountain getaway",
+    "bed": 2,
+    "bedroom": 1,
+    "price": "2.899.990",
+    "city": "Magelang"
+  },
+  {
+    "id": 17,
+    "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Hotel",
+    "title": "Riverside Lodge",
+    "description": "Stay by the riverside with serene views",
+    "bed": 1,
+    "bedroom": 1,
+    "price": "5.700.00",
+    "city": "Bandung"
+  },
+  {
+    "id": 18,
+    "image": "https://images.unsplash.com/photo-1618220321979-ecb3a975aa82?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Apartment",
+    "title": "Charming Suburban Flat",
+    "description": "A charming flat in a quiet suburban area",
+    "bed": 2,
+    "bedroom": 1,
+    "price": "2.350.000",
+    "city": "Surabaya"
+  },
+  {
+    "id": 19,
+    "image": "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Apartment",
+    "title": "Seaside Villa",
+    "description": "A luxurious villa with ocean views",
+    "bed": 3,
+    "bedroom": 2,
+    "price": "4.550.000",
+    "city": "Yogyakarta"
+  },
+  {
+    "id": 20,
+    "image": "https://plus.unsplash.com/premium_photo-1661879252375-7c1db1932572?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "Hotel",
+    "title": "Urban Boutique Hotel",
+    "description": "An elegant boutique hotel in the city",
+    "bed": 1,
+    "bedroom": 1,
+    "price": "2.999.990",
+    "city": "Bali"
+  }
+]
