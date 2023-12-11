@@ -2,6 +2,8 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import SearchResultScreen from "./src/screens/SearchResultScreen";
+import WishlistScreen from "./src/screens/WishlistScreen";
+import TopDestinations from "./src/components/TopDestination";
 
 export default function SearchResultTabNavigator() {
   const Tab = createMaterialTopTabNavigator();

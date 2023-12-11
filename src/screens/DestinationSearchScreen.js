@@ -15,7 +15,7 @@ export default function DestinationSearchScreen() {
 
     // Filtering search results based on input text
     const filtered = searchResult.filter((item) =>
-      item.description.toLowerCase().includes(text.toLowerCase())
+      item.city.toLowerCase().includes(text.toLowerCase())
     );
     setFilteredData(filtered);
   };
@@ -25,7 +25,9 @@ export default function DestinationSearchScreen() {
       <View style={styles.icon}>
         <FontAwesome name="map-marker" size={22} color="black" />
       </View>
-      <Text style={styles.location}>{item.description}</Text>
+      <Text style={styles.location}>
+        {item.city}, {item.destination}
+      </Text>
     </Pressable>
   );
   return (

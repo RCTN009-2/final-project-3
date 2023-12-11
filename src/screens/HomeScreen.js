@@ -12,6 +12,8 @@ import { FontAwesome, AntDesign, Feather } from "@expo/vector-icons";
 import { bgHeader } from "../assets/img";
 import data from "../assets/data/data";
 import { useNavigation } from "@react-navigation/native";
+import TopDestination from "../components/TopDestination";
+import destination from "../assets/data/search.json";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
@@ -29,16 +31,28 @@ export default function HomeScreen() {
           </Pressable>
 
           {/* title */}
-          <Text style={styles.title}>Go Near</Text>
+          <Text style={styles.title}>Find your perfect place to stay</Text>
 
           {/* button */}
           <Pressable
             style={styles.button}
             onPress={() => navigation.navigate("SearchResults")}
           >
-            <Text style={styles.buttonText}>Explore Nearby Stays</Text>
+            <Text style={styles.buttonText}>Explore</Text>
           </Pressable>
         </ImageBackground>
+      </View>
+      <View>
+        <Text
+          style={{
+            fontWeight: "bold",
+            fontSize: 20,
+            margin: 10,
+          }}
+        >
+          Top Destination
+        </Text>
+        <TopDestination destinationData={destination} />
       </View>
     </ScrollView>
   );
@@ -67,17 +81,17 @@ const styles = StyleSheet.create({
     justifyContents: "center",
   },
   title: {
-    fontSize: 80,
+    fontSize: 30,
     fontWeight: "bold",
     color: "white",
-    width: "70%",
+    width: "80%",
     marginLeft: 25,
-    marginTop: 20,
+    marginTop: 80,
   },
   button: {
     backgroundColor: "white",
     padding: 10,
-    width: 200,
+    width: 120,
     marginTop: 25,
     marginLeft: 25,
     borderRadius: 50,
