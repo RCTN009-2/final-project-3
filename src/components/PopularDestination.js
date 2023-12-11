@@ -9,7 +9,7 @@ import {
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 
-export default function TopDestinations({ destinationData }) {
+export default function PopularDestinations({ destinationData }) {
   const navigation = useNavigation();
 
   // Mengurutkan data berdasarkan rank
@@ -34,6 +34,7 @@ export default function TopDestinations({ destinationData }) {
           onPress={() => goToDestinationDetail(destination.city)}
         >
           <Image style={styles.image} source={{ uri: destination.image }} />
+          <Text style={styles.destinationName}>{destination.destination}</Text>
           <Text style={styles.cityName}>{destination.city}</Text>
         </Pressable>
       ))}
@@ -60,16 +61,14 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   destinationName: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: "bold",
     marginTop: 0,
     marginLeft: 20,
-    marginBottom: 5,
   },
   cityName: {
-    fontSize: 18,
-    color: "black",
-    fontWeight: "bold",
+    fontSize: 16,
+    color: "grey",
     marginLeft: 21,
     marginBottom: 10,
   },
