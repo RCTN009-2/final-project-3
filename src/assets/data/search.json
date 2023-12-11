@@ -9,17 +9,17 @@
   "rank": 1,
   "city":"Bali",
   "destination": "Ubud",
-  "image" : "https://indonesiaexpat.id/wp-content/uploads/2023/03/Bali-Island-768x614.jpg"
+  "image" : "https://static.thehoneycombers.com/wp-content/uploads/sites/4/2022/06/Pantai-Thomas-di-Uluwatu-Bali-768x549.jpg"
 },
   {"id":"2",
   "city":"Yogyakarta",
   "rank": 2,
   "destination": "Borobudur",
-  "image": "https://cdn1-production-images-kly.akamaized.net/pOoPTHMcVxTvi6366HdKF5odXkk=/1200x675/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3023951/original/083764400_1579164554-indonesia-1098328_1920.jpg"
+  "image": "https://cdn0-production-images-kly.akamaized.net/XlY8E59krgMvrSERww4N81VsAkU=/0x47:882x544/640x360/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1499401/original/045062900_1486444805-Tugu_Yogyakarta.jpg"
 },
   {"id":"3",
   "city":"Papua Barat",
-  "rank":3,
+  "rank":10,
   "destination": "Raja Ampat",
   "image": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/top-9-most-favourite-places-for-your-2021-travel-bucket-list-in-indonesia/raja-ampat.jpg"
 },
@@ -37,7 +37,7 @@
 },
   {"id":"6",
   "city":"Manggarai Barat",
-  "rank":4,
+  "rank":11,
   "destination": "Labuan Bajo",
   "image": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/top-9-most-favourite-places-for-your-2021-travel-bucket-list-in-indonesia/labuanbajo.jpg"
 },
@@ -48,45 +48,45 @@
   "image": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/top-9-most-favourite-places-for-your-2021-travel-bucket-list-in-indonesia/bintan.jpg"
 },
 {"id":"8",
-"rank":10,
+"rank":3,
 "city":"Bandung",
 "destination": "The Great Asia Africa",
-  "image": "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2022/05/10/970b9b47-8b7d-489a-b736-2582b2b9cc82-1652116235217-2617aa799cf63fa9bc374d9fea95028c.jpg"
+  "image": "https://lh5.googleusercontent.com/p/AF1QipNIIoHAulvp9X4zb09N22lwnb717AIweZi2z_c=w540-h312-n-k-no"
 },
   {"id":"9",
-  "rank":6,
+  "rank":17,
   "city":"Nusa Tenggara Barat",
   "destination": "Lombok",
   "image": "https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/top-9-most-favourite-places-for-your-2021-travel-bucket-list-in-indonesia/lombok.jpg"
 },
   {"id":"10",
-  "rank":9,
+  "rank":16,
   "city":"Jawa Timur",
   "destination": "Gunung Bromo",
   "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQQ8LiWA2yk5uvLPTuYRRolkRmnCNDU9fNiGHygGDQr4Yx1VoUdYJcUL7cDW5mIzTK-IzdMbG31qaDTw7fkPAixBPdw_e8auZOrPle7AQ"
 },
   {"id":"11",
-  "rank":14,
+  "rank":15,
   "city":"Nusa Tenggara Timur",
   "destination": "Pulau Komodo",
   "image": "https://indonesiaexpat.id/wp-content/uploads/2023/03/Komodo-Island-768x512.jpg"
 },
   {"id":"12",
-  "rank":11,
-  "city":"Sulawesi Utara",
+  "rank":4,
+  "city":"Manado",
   "destination": "Taman Nasional Bunaken",
-  "image": "https://lh5.googleusercontent.com/p/AF1QipNKSUR0KVuASHaEYcL8hL7WLePWsq7Y3pS4OTo=w594-h343-n-k-no"
+  "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSMKW5Z1sebLpL3IEBSFZNEZ20ocKWFo5S4br2LyjqgDB4kcyIMy_6omUzXySknNe876a9oZEU_A8R4bCL3sQJgbyHbHBSYoMjcDL6hgw"
 },
   {"id":"13",
   "city":"Nusa Tenggara Barat",
   "destination": "Gili Islands",
-  "rank":5,
+  "rank":6,
   "image": "https://indonesiaexpat.id/wp-content/uploads/2023/03/Gili-Islands-760x570.jpg"
 },
   {"id":"14",
   "rank":5,
-  "city":"Sumatera Utara",
-  "destination": "Danau Toba",
-  "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRJO9-49phrC9aYlUH7l3XbFsbOIr1Y1P6ZcrAuyH6nSwWeV_Ubq4fxvthVVvCHlPLiBdUa3ozaKXXgry9UIu3tFshIrRCkDn_mFWEB_w"
+  "city":"Malang",
+  "destination": "Alun Alun Malang",
+  "image": "https://d3p0bla3numw14.cloudfront.net/news-content/img/2021/05/27095214/Tinggal-di-Malang.jpg"
 }
 ]

@@ -13,7 +13,9 @@ import { bgHeader } from "../assets/img";
 import data from "../assets/data/data";
 import { useNavigation } from "@react-navigation/native";
 import TopDestination from "../components/TopDestination";
-import destination from "../assets/data/search.json";
+import city from "../assets/data/search.json";
+import destination from "../assets/data/destination.json";
+import PopularDestinations from "../components/PopularDestination";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
@@ -52,7 +54,19 @@ export default function HomeScreen() {
         >
           Top Destination
         </Text>
-        <TopDestination destinationData={destination} />
+        <TopDestination destinationData={city} />
+      </View>
+      <View>
+        <Text
+          style={{
+            fontWeight: "bold",
+            fontSize: 20,
+            margin: 10,
+          }}
+        >
+          Popular Destination
+        </Text>
+        <PopularDestinations destinationData={destination} />
       </View>
     </ScrollView>
   );
