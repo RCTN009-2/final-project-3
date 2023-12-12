@@ -11,7 +11,7 @@ import {
   FontAwesome,
 } from "@expo/vector-icons";
 import WishlistScreen from "./src/screens/WishlistScreen";
-import HistoryScreen from "./src/screens/HistoryScreen";
+import Settings from "./src/screens/SettingsScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
 import ExploreNavigator from "./ExploreNavigator";
 
@@ -48,20 +48,7 @@ const HomeTabNavigator = (props) => {
             ),
         }}
       />
-      <Tab.Screen
-        name="History"
-        component={HistoryScreen}
-        options={{
-          tabBarLabel: "History",
-          headerShown: false,
-          tabBarIcon: ({ focused }) =>
-            focused ? (
-              <FontAwesome5 name="history" size={24} color="black" />
-            ) : (
-              <MaterialIcons name="history" size={24} color="black" />
-            ),
-        }}
-      />
+      
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}
@@ -73,6 +60,20 @@ const HomeTabNavigator = (props) => {
               <Ionicons name="person-sharp" size={24} color="black" />
             ) : (
               <Ionicons name="person-outline" size={24} color="black" />
+            ),
+        }}
+      />
+      <Tab.Screen
+        name="Settings"
+        component={Settings}
+        options={{
+          tabBarLabel: "Settings",
+          headerShown: false,
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <FontAwesome5 name="cog" size={24} color="black" />
+            ) : (
+              <MaterialIcons name="settings" size={24} color="black" />
             ),
         }}
       />

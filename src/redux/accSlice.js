@@ -86,5 +86,4 @@ const accSlice = createSlice({
 });
 
 export const { updateProfile, checkLogin, logOut } = accSlice.actions;
-
 export default accSlice.reducer;

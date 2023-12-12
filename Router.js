@@ -15,6 +15,7 @@ import Hotels from "./src/components/Hotels";
 import DetailHotels from "./src/components/DetailHotels";
 import HotelsDetailScreen from "./src/screens/HotelsDetailScreen";
 import WishlistScreen from "./src/screens/WishlistScreen";
+import Booking from "./src/screens/Booking"
 
 const Stack = createNativeStackNavigator();
 
@@ -69,6 +70,13 @@ const Router = (props) => {
             component={HotelsDetailScreen}
             options={{
               title: "Hotel Details",
+            }}
+          />
+          <Stack.Screen
+            name={"Booking"}
+            component={Booking}
+            options={{
+              title: "Booking",
             }}
           />
         </Stack.Navigator>
