@@ -3,15 +3,12 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { useEffect, useState } from "react";
 import { AntDesign } from "@expo/vector-icons";
 import { Pressable } from "react-native";
-import hotelsData from "../assets/data/data";
 import { useNavigation } from "@react-navigation/native";
 
-export default function DetailHotels({ route, hotels }) {
+export default function DetailHotels({ hotels }) {
   const [wishlist, setWishlist] = useState([]);
   const [isInWishlist, setIsInWishlist] = useState(false);
   const navigation = useNavigation();
-  const data = route.params;
-  console.log(route.params);
   useEffect(() => {
     loadWishlist();
   }, []);
@@ -67,7 +64,7 @@ export default function DetailHotels({ route, hotels }) {
   };
 
   const goToBooking = () => {
-    navigation.navigate("Booking");
+    navigation.navigate("Booking", hotels);
   };
 
   return (

@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, StyleSheet, Pressable } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 import React from "react";
 import Back from "../components/Back";
@@ -19,14 +19,12 @@ const Booking = ({ route }) => {
     dispatch(bookAdded(newObject));
     navigate.navigate("Profile");
   };
-  console.log(route.params);
   const navigate = useNavigation();
 
   return (
-    <View className="w-5/6 mx-auto">
+    <View>
       <Back onPress={() => navigate.goBack()}>Book Your Hotel</Back>
-      <View>
-        <Text className="font-semibold mb-4">Contact Informations</Text>
+      <View style={styles.container}>
         <View className="mb-6">
           <Text className="text-xs mb-2">Name</Text>
           <TextInput
@@ -50,16 +48,13 @@ const Booking = ({ route }) => {
             {profileData.noHp}
           </TextInput>
         </View>
-      </View>
-      <View>
-        <Text className="font-semibold mb-4">Price Summary</Text>
         <View className="mb-6">
           <Text className="text-xs mb-2">Detail Book</Text>
           <TextInput
             editable={false}
             className=" text-slate-500 mb-4 border-b border-slate-200 py-2"
           >
-            {/* 1 Days, {route.params.item.bedrooms} Bedrooms,{" "} */}
+            1 Days, {route.params.bed} Bedrooms{" "}
             {/* {parseInt(searchData.adults)} Guest */}
           </TextInput>
           <Text className="text-xs">Total</Text>
@@ -67,20 +62,32 @@ const Booking = ({ route }) => {
             editable={false}
             className=" text-slate-500 mb-4 border-b border-slate-200 py-2"
           >
-            {/* $ {route.params.item.price.total} */}
-          </TextInput>
-          <Text className="text-xs">Payable Now (Half Price)</Text>
-          <TextInput
-            editable={false}
-            className="text-slate-500 mb-4 border-b border-slate-200 py-2"
-          >
-            {/* $ {route.params.item.price.total / 2} */}
+            Rp {route.params.price}
           </TextInput>
         </View>
       </View>
-      <Button onPress={() => addBooking()}>Checkout</Button>
+      <Pressable onPress={() => addBooking()} style={styles.button}>
+        <Text style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>
+          Checkout
+        </Text>
+      </Pressable>
     </View>
   );
 };
 
 export default Booking;
+
+const styles = StyleSheet.create({
+  container: {
+    margin: 20,
+  },
+
+  button: {
+    marginHorizontal: 20,
+    backgroundColor: "skyblue",
+    padding: 15,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 20,
+  },
+});
