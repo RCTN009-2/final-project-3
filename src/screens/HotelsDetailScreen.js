@@ -7,7 +7,7 @@ import { useRoute } from "@react-navigation/native";
 
 export default function HotelsDetailScreen() {
   const route = useRoute();
-  const data = hotelsData.find((hotel) => hotel.id === route.params.hotelId);
+  const data = route.params;
 
   return (
     <View style={{ backgroundColor: "white" }}>

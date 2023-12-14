@@ -1,22 +1,41 @@
-import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
-import React from 'react';
-import Back from '../components/Back';
-import CardSmall from '../components/CardSmall';
-import { useNavigation } from '@react-navigation/native';
-import { useSelector } from 'react-redux';
+import React, { useEffect, useState } from "react";
+import { StyleSheet, Text, View, ScrollView, FlatList } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import Hotels from "../components/Hotels";
+import Back from "../components/Back";
+export default function WishlistScreen() {
+  const [wishlist, setWishlist] = useState([]);
 
-const WishList = () => {
-  const wishlist = useSelector((state) => state.wish.data);
-  const navigate = useNavigation();
+  useEffect(() => {
+    const fetchWishlist = async () => {
+      try {
+        const existingWishlist = await AsyncStorage.getItem("wishlist");
+        if (existingWishlist) {
+          const parsedWishlist = JSON.parse(existingWishlist);
+          setWishlist(parsedWishlist);
+        }
+      } catch (error) {
+        console.error("Error fetching wishlist:", error);
+      }
+    };
+    fetchWishlist();
+  }, [wishlist]);
+
   return (
-    <View className='w-5/6 mx-auto my-10'>
+    <View>
       <Back onPress={() => navigate.goBack()}>Wishlist</Back>
-      <ScrollView>
-        {wishlist &&
-          wishlist.map((item) => <CardSmall key={item.id} item={item} />)}
-      </ScrollView>
+      <FlatList
+        style={styles.container}
+        data={wishlist}
+        renderItem={({ item }) => <Hotels hotels={item} />}
+        keyExtractor={(item, index) => item.id.toString()}
+      />
     </View>
   );
-};
+}
 
-export default WishList;
+const styles = StyleSheet.create({
+  container: {
+    padding: 15,
+  },
+});
