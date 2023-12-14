@@ -10,7 +10,8 @@ export default function Hotels(props) {
 
   const navigation = useNavigation();
   const goToDetailHotels = () => {
-    navigation.navigate("HotelsDetail", { hotelId: data.id });
+    navigation.navigate("HotelsDetail", data);
+    console.log(data);
   };
 
   return (
