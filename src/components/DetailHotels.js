@@ -4,11 +4,14 @@ import React, { useEffect, useState } from "react";
 import { AntDesign } from "@expo/vector-icons";
 import { Pressable } from "react-native";
 import hotelsData from "../assets/data/data";
+import { useNavigation } from "@react-navigation/native";
 
-export default function DetailHotels({ hotels }) {
+export default function DetailHotels({ route, hotels }) {
   const [wishlist, setWishlist] = useState([]);
   const [isInWishlist, setIsInWishlist] = useState(false);
-
+  const navigation = useNavigation();
+  const data = route.params;
+  console.log(route.params);
   useEffect(() => {
     loadWishlist();
   }, []);
@@ -62,6 +65,11 @@ export default function DetailHotels({ hotels }) {
       addToWishlist();
     }
   };
+
+  const goToBooking = () => {
+    navigation.navigate("Booking");
+  };
+
   return (
     <View>
       <ScrollView>
@@ -95,7 +103,7 @@ export default function DetailHotels({ hotels }) {
       </ScrollView>
 
       <View style={styles.buttonContainer}>
-        <Pressable style={styles.bookButton}>
+        <Pressable style={styles.bookButton} onPress={goToBooking}>
           <Text style={{ color: "white", fontSize: 20, fontWeight: "bold" }}>
             Book Now
           </Text>
